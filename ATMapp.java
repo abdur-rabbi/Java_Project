@@ -95,8 +95,8 @@ public class ATMapp {
             obj.input();
             System.out.println(".....Account created successfully!.........");
             obj.display();
-        } catch (Exception e) {
-            System.out.println("Error creating account: " + e.getMessage());
+        } catch (IllegalArgumentException e) {
+            System.out.println("Error creating account: " + e);
             return;
         }
         System.out.println("Now please Login to your account. You can try only three times.");
